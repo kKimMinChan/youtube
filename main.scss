@@ -1,0 +1,148 @@
+body {
+  line-height: 1.2;
+}
+button {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+header {
+  background-color: #000;
+  text-align: center;
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    .title {
+      font-size: 24px;
+      i {
+        color: red;
+      }
+      span {
+        color: #fff;
+      }
+    }
+    .icons {
+      color: #fff;
+      i {
+        padding: 5px;
+      }
+    }
+  }
+  video {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  .actionAndchannel {
+    .action {
+      .hashtag {
+        display: flex;
+        li {
+          padding: 0 5px;
+          font-size: 12px;
+          font-weight: 600;
+          color: #045fd4;
+        }
+      }
+      .action__title {
+        display: flex;
+      }
+      .view {
+        font-size: 12px;
+        color: #333;
+      }
+      .action__icons {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+        button {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-bottom: 10px;
+        }
+      }
+    }
+      
+    .channel {
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid rgb(156, 150, 150);
+      border-bottom: 1px solid rgb(156, 150, 150);
+      .metadata {
+        display: flex;
+        padding: 10px 0;
+        img {
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+        }
+        .channel_title {
+          display: flex;
+          flex-direction: column;
+          margin-left: 20px;
+          .name {
+            font-size: 14px;
+          }
+          .subscribers {
+            font-size: 12px;
+            color: #333;
+          }
+        }
+      }
+      button {
+        font-size: 16px;
+        color: red;
+      }
+    }
+  }
+  
+  .Up-next {
+    .Up-next__title {
+      padding: 10px 0;
+      color: #666;
+    }
+    ul {
+      .item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .img {
+          flex-basis: 35%;
+          margin-right: 10px;
+          img {
+            width: 100%;
+          }
+        }
+        .youtube-title {
+          flex-basis: 65%;
+          display: flex;
+          flex-direction: column;
+          font-size: 12px;
+        }
+        > button {
+          flex-basis: 5%;
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .info {
+    flex-direction: row;
+    .actionAndchannel {
+      margin-right: 40px;
+    }
+  }
+}
